@@ -1,0 +1,32 @@
+// @eslint-disable
+// @tslint-disable
+{
+    
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2016",
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["src/*"],
+            "/*": ["/*"]
+        },
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "es6",
+            "esnext"
+        ]
+    },
+    "exclude": [
+        "storybook-static/*",
+        "dist/*",
+        "node_modules"
+    ],
+    "typeAcquisition": {"enable": true,
+    "include": [
+        "d3"
+    ]}
+}
